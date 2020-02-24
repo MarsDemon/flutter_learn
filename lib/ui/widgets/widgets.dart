@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wanandroid/blocs/bloc_index.dart';
 import 'package:flutter_wanandroid/common/component_index.dart';
+import 'package:flutter_wanandroid/ui/pages/user/user_login_page.dart';
 
 class ProgressView extends StatelessWidget {
 
@@ -31,7 +32,7 @@ class LikeBtn extends StatelessWidget {
     return new InkWell(
       onTap: () {
         if (Util.isLogin()) {
-          bloc.doCollection(labelId, id, isCollect);
+          bloc.doCollection(labelId, id, !isLike);
         } else {
           NavigatorUtil.pushPage(context, UserLoginPage(), pageName: "UserLoginPage");
         }

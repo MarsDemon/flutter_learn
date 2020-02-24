@@ -86,4 +86,12 @@ class TabPageState extends State<TabPage> {
           }),
     );
   }
+
+  @override
+  void dispose() {
+    for (int i = 0, length = _children.length; i < length; i++) {
+      _children[i].bloc.dispose();
+    }
+    super.dispose();
+  }
 }

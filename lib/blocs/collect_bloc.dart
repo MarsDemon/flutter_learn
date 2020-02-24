@@ -14,7 +14,7 @@ class CollectBloc implements BlocBase {
 
   Sink<List<ReposModel>> get _collectListSink => _collectListBs.sink;
 
-  Stream<List<ReposModel>> get _collectListStream => _collectListBs.stream.asBroadcastStream();
+  Stream<List<ReposModel>> get collectListStream => _collectListBs.stream.asBroadcastStream();
 
   List<ReposModel> _collectList;
 
