@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wanandroid/common/component_index.dart';
 import 'package:flutter_wanandroid/res/strings.dart';
+import 'package:flutter_wanandroid/ui/pages/home_page.dart';
 import 'package:flutter_wanandroid/ui/pages/main_left_page.dart';
+import 'package:flutter_wanandroid/ui/pages/repos_page.dart';
+import 'package:flutter_wanandroid/ui/pages/events_page.dart';
+import 'package:flutter_wanandroid/ui/pages/search_page.dart';
+import 'package:flutter_wanandroid/ui/pages/system_page.dart';
 
 class _Page {
   final String labelId;

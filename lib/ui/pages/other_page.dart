@@ -6,8 +6,8 @@ class OtherPage extends StatelessWidget {
   Widget build(BuildContext context) {
     List<ComModel> list = new List();
     list.add(new ComModel(title: "WanAndroid Api", url: ""));
-    list.add(new ComModel(title: "界面参考Gitme", url: "http"));
-    list.add(new ComModel(title: "GitHub trending Api", url: 'https//:'));
+    list.add(new ComModel(title: "界面参考Gitme", url: "https://flutterchina.club/app/gm.html"));
+    list.add(new ComModel(title: "GitHub trending Api", url: "https://github.com/huchenme/github-trending-api"));
     return new Scaffold(
       appBar: new AppBar(
         title: new Text('其他'),

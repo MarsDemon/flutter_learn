@@ -90,9 +90,9 @@ class MyAppState extends State<MyApp> {
       },
       home: new SplashPage(),
       theme: ThemeData.light().copyWith(
-        primaryColor: _themeColor,
-        accentColor: _themeColor,
-        indicatorColor: Colors.white,
+        primaryColor: _themeColor,      /// 主题颜色， 决定导航栏的颜色
+        accentColor: _themeColor,       /// 主题次级颜色， 决定大多数 widget 的颜色， 如进度条、开关等。
+        indicatorColor: Colors.white,   /// 对话框背景色？
       ),
       locale: _locale,
       localizationsDelegates: [

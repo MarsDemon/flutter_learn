@@ -108,7 +108,7 @@ class MainBloc implements BlocBase {
 
   Sink<List<ComModel>> get _recListSink => _recList.sink;
 
-  Stream<List<ComModel>> get recListSink => _recList.stream.asBroadcastStream();
+  Stream<List<ComModel>> get recListStream => _recList.stream.asBroadcastStream();
 
   List<ComModel> hotRecList;
 
@@ -167,7 +167,7 @@ class MainBloc implements BlocBase {
   }
 
   @override
-  Future onRefresh({String labelId}) {
+  Future onRefresh({String labelId, bool isReload}) {
     switch (labelId) {
       case Ids.titleHome:
         getHotRecItem();
